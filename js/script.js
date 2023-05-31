@@ -35,22 +35,24 @@ console.log(team)
 
 
 for(let index in team){
-	console.log(team[index]);
+    
+    teamMember = (team[index])
+    console.log(teamMember)
 }
 
-let cards_container = document.GetElementById('cards-container');
+
 
 for(let i = 0; i < team.lenght; i++){
 
-	let teamMember = team[i];
 
 	let card = `<div> 
         <p>${teamMember.immagine}</p>
         <p>${teamMember.nome}</p>
 		<p>${teamMember.role}</p>
 	</div>`
+    document.GetElementById('cards-container').innerHTML = `${teamMember}`
 
-cards_container.innerHTML += card
+    cards_container.innerHTML += card
 		
 }
 
