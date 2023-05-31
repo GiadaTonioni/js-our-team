@@ -40,7 +40,7 @@ for(let index in team){
     console.log(teamMember)
 }
 
-
+let cards_container = document.getElementById('cards-container')
 
 for(let i = 0; i < team.lenght; i++){
 
@@ -50,7 +50,7 @@ for(let i = 0; i < team.lenght; i++){
         <p>${teamMember.nome}</p>
 		<p>${teamMember.role}</p>
 	</div>`
-    document.GetElementById('cards-container').innerHTML = `${teamMember}`
+
 
     cards_container.innerHTML += card
 		
