@@ -42,13 +42,14 @@ for(let index in team){
 
 let cards_container = document.getElementById('cards-container')
 
-for(let i = 0; i < team.lenght; i++){
-
-
+for(let i = 0; i < team.length; i++){
+    teamMember = team[i] 
+    console.log(teamMember)
+    
 	let card = `<div> 
-        <p>${teamMember.immagine}</p>
-        <p>${teamMember.nome}</p>
-		<p>${teamMember.role}</p>
+        <img src="${team[i].immagine}">
+        <p>${team[i].nome}</p>
+		<p>${team[i].role}</p>
 	</div>`
 
 
