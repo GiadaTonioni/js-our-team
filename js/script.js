@@ -46,7 +46,7 @@ for(let i = 0; i < team.length; i++){
     teamMember = team[i] 
     console.log(teamMember)
     
-	let card = `<div> 
+	let card = `<div class="card"> 
         <img src="${team[i].immagine}">
         <p>${team[i].nome}</p>
 		<p>${team[i].role}</p>
