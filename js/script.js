@@ -33,9 +33,30 @@ const team = [
 ]
 console.log(team)
 
+
 for(let index in team){
 	console.log(team[index]);
 }
+
+let cards_container = document.GetElementById('cards-container');
+
+for(let i = 0; i < team.lenght; i++){
+
+	let teamMember = team[i];
+
+	let card = `<div> 
+        <p>${teamMember.immagine}</p>
+        <p>${teamMember.nome}</p>
+		<p>${teamMember.role}</p>
+	</div>`
+
+cards_container.innerHTML += card
+		
+}
+
+
+
+
 
 
 
