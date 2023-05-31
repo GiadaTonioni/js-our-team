@@ -33,6 +33,9 @@ const team = [
 ]
 console.log(team)
 
+for(let index in team){
+	console.log(team[index]);
+}
 
 
 
